@@ -1,0 +1,234 @@
+$ curl https://deckofcardsapi.com/api/deck/new/ | python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    80  100    80    0     0     96      0 --:--:-- --:--:-- --:--:--    96
+{
+    "success": true,
+    "deck_id": "5cj8r3k28uey",
+    "remaining": 52,
+    "shuffled": false
+}
+
+pradhson@PRADHSON-BLT0E MINGW64 ~/Devnet (master)
+$ curl https://deckofcardsapi.com/api/deck/ft1bpglgquqr/draw/?count=3 | python -m json.tool^C
+
+pradhson@PRADHSON-BLT0E MINGW64 ~/Devnet (master)
+$ curl https://deckofcardsapi.com/api/deck/5cj8r3k28uey/draw/?count=3 | python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   755  100   755    0     0   1002      0 --:--:-- --:--:-- --:--:--  1005
+{
+    "success": true,
+    "deck_id": "5cj8r3k28uey",
+    "cards": [
+        {
+            "code": "AS",
+            "image": "https://deckofcardsapi.com/static/img/AS.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/AS.svg",
+                "png": "https://deckofcardsapi.com/static/img/AS.png"
+            },
+            "value": "ACE",
+            "suit": "SPADES"
+        },
+        {
+            "code": "2S",
+            "image": "https://deckofcardsapi.com/static/img/2S.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/2S.svg",
+                "png": "https://deckofcardsapi.com/static/img/2S.png"
+            },
+            "value": "2",
+            "suit": "SPADES"
+        },
+        {
+            "code": "3S",
+            "image": "https://deckofcardsapi.com/static/img/3S.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/3S.svg",
+                "png": "https://deckofcardsapi.com/static/img/3S.png"
+            },
+            "value": "3",
+            "suit": "SPADES"
+        }
+    ],
+    "remaining": 49
+}
+
+
+
+$ curl https://webexapis.com/v1/messages -X POST -H "Authorization:Bearer Mz....10f" --data "toPersonEmail=pradhyumnas1999@gmail.com" --data "text=Hi%20from%20DevNet"| python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   493    0   430  100    63    257     37  0:00:01  0:00:01 --:--:--   294
+{
+    "id": "Y2lh",
+    "roomId": "Y2lmQ2",
+    "toPersonEmail": "pradhyumnas1999@gmail.com",
+    "roomType": "direct",
+    "text": "Hi from DevNet",
+    "personId": "Y2lFlZjY",
+    "personEmail": "pradhson@cisco.com",
+    "created": "2020-06-02T08:20:57.734Z"
+}
+
+
+
+ curl -X GET https://webexapis.com/v1/teams -H "Authorization:Bearer Mz....0f" | python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  2014    0  2014    0     0    871      0 --:--:--  0:00:02 --:--:--   872
+{
+    "items": [
+        {
+            "id": "YMDYzNzQxZGI0",
+            "name": "Interns Collab FY20",
+            "creatorId": "Y2WQ1OS1mNTBjZjVjYmE5OWE",
+            "created": "2020-04-29T09:50:46.708Z"
+        },
+        {
+            "id": "Y2lzY29zcGFyazovL3VzL1RFQU0vZmM3ZjFmYjAtN2ZiMS0xMWVhLWI5NjYtZmY3MWM2MmE2NWU2",
+            "name": "WebEx Warriors - only Interns",
+            "creatorId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2UxYjNiNy00MWRjLTQ4MDEtYjIwZi1hNGMzMWM5NDcwYzM",
+            "created": "2020-04-16T07:15:01.035Z"
+        },
+        {
+            "id": "Y2lzY29zcGFyazovL3VzL1RFQU0vOTRjYzYi0xMWVhLWFiZTYtOWY0YzMxM2Q0NjMw",
+            "name": "FY20- CX- Internship Program",
+            "creatorId": "Y2lzY29zcGFyaYThlNjgxOC0xMTVjLTQzMTAtYjMyMy0zYTdlZjczNmMwYTg",
+            "created": "2020-04-13T04:02:24.119Z"
+        },
+        {
+            "id": "Y2lzY29zcGFyazovL3VzLtNTk0YS0xMWVhLWFmYmEtZTU5NWIzYTlkZWYx",
+            "name": "cube-wale",
+            "creatorId": "Y2lzY29zcGFyazovL3VS9jOTkwNWIwYy0yODNiLTRlOGQtYjM5Zi1kNjlkZDRkMTFlZjY",
+            "created": "2020-02-27T10:17:57.658Z"
+        },
+        {
+            "id": "Y2lzY29zcGFyazovL3VzL1RFQU0vYzJiNzNhZjAtNGNhZS0xMWVhLWExNTgtZTUzNWJjMzUzY2E2",
+            "name": "CXC Bangalore Collaboration Interns - FY20",
+            "creatorId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS81YmIxM2FmMi0yOGRkLTQ5NTQtYjM0Zi05ZTcwMWE0OTg4MGE",
+            "created": "2020-02-11T09:13:26.303Z"
+        },
+        {
+            "id": "Y2lzY29zcGFyazovL3VzL1RtNDc3Mi0xMWVhLTg5ZjctYWIyZjkyNDM1Nzk1",
+            "name": "EECV_Intern_2020",
+            "creatorId": "Y2lzY29zcGFyazovLwNWIwYy0yODNiLTRlOGQtYjM5Zi1kNjlkZDRkMTFlZjY",
+            "created": "2020-02-04T17:19:49.583Z"
+        },
+        {
+            "id": "Y2lzY29zcGFyazovLiNzAtMzk5OS0xMWVhLTg0MWEtNzExMjA2MzY2MGQ2",
+            "name": "Global Intern Video Contest",
+            "creatorId": "Y2lzY29zcGFyZjdiYS0yNWY4LTQ5MTktYTAzOS1mMzI3NjJkZTRjYjY",
+            "created": "2020-01-18T02:25:56.903Z"
+        },
+        {
+            "id": "Y2lzY29zcGFyazovL3VzL1yZS0xMWVhLThkM2EtZmYyNDcwMmU4ZWJh",
+            "name": "FY20- CX- Interns",
+            "creatorId": "Y2lzY29zcGFyaNjgxOC0xMTVjLTQzMTAtYjMyMy0zYTdlZjczNmMwYTg",
+            "created": "2020-01-12T11:29:37.117Z"
+        }
+    ]
+}
+
+> import requests
+>>> requests.get("https://api.github.com")
+<Response [200]>
+>>> import json
+>>> url="https:/?deckofcardsapi.com/api/deck/"
+>>> url="https://deckofcardsapi.com/api/deck/"
+>>> resp=requests.get(url+"new/")
+>>> print(resp)
+<Response [200]>
+>>> print(resp.text)
+{"success": true, "deck_id": "1d5hct7rwsfb", "remaining": 52, "shuffled": false}
+>>> deck=json.loads(resp)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\pradhson\AppData\Local\Programs\Python\Python38\Lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not Response
+>>> deck=json.load(resp)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\pradhson\AppData\Local\Programs\Python\Python38\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+AttributeError: 'Response' object has no attribute 'read'
+>>> deck=json.loads(resp)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\pradhson\AppData\Local\Programs\Python\Python38\Lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not Response
+>>> deck=json.loads(resp.text)
+>>> decknum=deck["deck_id"]
+>>> decknum
+'1d5hct7rwsfb'
+>>> url2=url+decknum+"/draw/?count=2"
+>>> url2
+'https://deckofcardsapi.com/api/deck/1d5hct7rwsfb/draw/?count=2'
+>>> cards=requesta.get(url2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'requesta' is not defined
+>>> cards=requests.get(url2)
+>>> cards
+<Response [200]>
+>>> cards.text
+'{"success": true, "deck_id": "1d5hct7rwsfb", "cards": [{"code": "AS", "image": "https://deckofcardsapi.com/static/img/AS.png", "images": {"svg": "https://deckofcardsapi.com/static/img/AS.svg", "png": "https://deckofcardsapi.com/static/img/AS.png"}, "value": "ACE", "suit": "SPADES"}, {"code": "2S", "image": "https://deckofcardsapi.com/static/img/2S.png", "images": {"svg": "https://deckofcardsapi.com/static/img/2S.svg", "png": "https://deckofcardsapi.com/static/img/2S.png"}, "value": "2", "suit": "SPADES"}], "remaining": 50}'
+>>> pprint(cards.text)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'pprint' is not defined
+>>> import pprint
+>>> pprint(cards.text)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'module' object is not callable
+>>> from pprint import pprint
+>>> pprint(cards.text)
+('{"success": true, "deck_id": "1d5hct7rwsfb", "cards": [{"code": "AS", '
+ '"image": "https://deckofcardsapi.com/static/img/AS.png", "images": {"svg": '
+ '"https://deckofcardsapi.com/static/img/AS.svg", "png": '
+ '"https://deckofcardsapi.com/static/img/AS.png"}, "value": "ACE", "suit": '
+ '"SPADES"}, {"code": "2S", "image": '
+ '"https://deckofcardsapi.com/static/img/2S.png", "images": {"svg": '
+ '"https://deckofcardsapi.com/static/img/2S.svg", "png": '
+ '"https://deckofcardsapi.com/static/img/2S.png"}, "value": "2", "suit": '
+ '"SPADES"}], "remaining": 50}')
+>>> jsoncards=json.loads(cards.text)
+>>> pprint(json.dumps(jsoncards,indent=2)
+... pprint(json.dumps(jsoncards,indent=2))
+  File "<stdin>", line 2
+    pprint(json.dumps(jsoncards,indent=2))
+    ^
+SyntaxError: invalid syntax
+>>> print(json.dumps(jsoncards,indent=2))
+{
+  "success": true,
+  "deck_id": "1d5hct7rwsfb",
+  "cards": [
+    {
+      "code": "AS",
+      "image": "https://deckofcardsapi.com/static/img/AS.png",
+      "images": {
+        "svg": "https://deckofcardsapi.com/static/img/AS.svg",
+        "png": "https://deckofcardsapi.com/static/img/AS.png"
+      },
+      "value": "ACE",
+      "suit": "SPADES"
+    },
+    {
+      "code": "2S",
+      "image": "https://deckofcardsapi.com/static/img/2S.png",
+      "images": {
+        "svg": "https://deckofcardsapi.com/static/img/2S.svg",
+        "png": "https://deckofcardsapi.com/static/img/2S.png"
+      },
+      "value": "2",
+      "suit": "SPADES"
+    }
+  ],
+  "remaining": 50
+}
+
